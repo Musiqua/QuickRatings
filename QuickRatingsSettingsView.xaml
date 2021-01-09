@@ -8,5 +8,7 @@
     <StackPanel>
         <TextBlock Text="Include half stars"/>
         <CheckBox IsChecked="{Binding IncludeHalfStars}"/>
+        <TextBlock Text="Add stars as tags"/>
+        <CheckBox IsChecked="{Binding AddStarsAsTags}"/>
     </StackPanel>
 </UserControl>

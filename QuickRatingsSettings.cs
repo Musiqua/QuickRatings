@@ -8,6 +8,7 @@ namespace QuickRatings
         private readonly QuickRatings plugin;
 
         public bool IncludeHalfStars { get; set; } = false;
+        public bool AddStarsAsTags { get; set; } = false;
 
         // Parameterless constructor must exist if you want to use LoadPluginSettings method.
         public QuickRatingsSettings()
@@ -26,6 +27,7 @@ namespace QuickRatings
             if (savedSettings != null)
             {
                 IncludeHalfStars = savedSettings.IncludeHalfStars;
+                AddStarsAsTags = savedSettings.AddStarsAsTags;
             }
         }
 
